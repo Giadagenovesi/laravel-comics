@@ -29,3 +29,27 @@ Route::get('/movies', function () {
 Route::get('/tv', function () {
     return view('tv');
 });
+
+Route::get('/games', function () {
+    return view('games');
+});
+
+Route::get('/collectibles', function () {
+    return view('collectibles');
+});
+
+Route::get('/videos', function () {
+    return view('videos');
+});
+
+Route::get('/fans', function () {
+    return view('fans');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/shop', function () {
+    return view('shop');
+});

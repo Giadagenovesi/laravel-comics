@@ -10,13 +10,13 @@
 </section>
 <section class="comics">
     <div class="container">
-        <div class="row row-cols-6">
+        <div class="row row-cols-6 g-5">
             @foreach ($db as $comic)
             <div class="col">
                 <div class="card">
                     <img src="{{ $comic['thumb'] }}" alt="">
                     <div class="pt-3">
-                        <h5 class="card-title">{{ $comic['series'] }}</h5>
+                        <h6 class="card-title">{{ $comic['series'] }}</h6>
                     </div>
                 </div>
             </div>

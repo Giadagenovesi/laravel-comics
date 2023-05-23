@@ -1,0 +1,29 @@
+@extends('layouts.app')
+
+@section('content')
+<section class="jumbotron">
+    <div class="container">
+        <a class="series-btn" href="">
+            CURRENT SERIES
+        </a>
+    </div>
+</section>
+<section class="comics">
+    <div class="container">
+        <div class="row row-cols-6">
+            @foreach ($db as $comic)
+            <div class="col">
+                <div class="card">
+                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <div class="pt-3">
+                        <h5 class="card-title">{{ $comic['series'] }}</h5>
+                    </div>
+                </div>
+            </div>
+                
+            @endforeach
+        </div>
+    </div>
+</section>
+    
+@endsection
